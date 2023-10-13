@@ -1,0 +1,19 @@
+/* HEADER */
+header {
+  border-bottom: solid 2px black;
+
+  ul li {
+    font-size: 20px;
+
+    a::before {
+      content: "/";
+      display: block;
+      float: left;
+      text-align: center;
+      font-size: 20px;
+      margin-right: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
