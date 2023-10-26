@@ -1,20 +1,117 @@
 /* aca se pondran todas las mediaquerys */
-@media (min-width: 300px) and (max-width: 500px) {
-  /*-----PAGINA CONOCENOS---*/
-  .LineaTiempo{
+
+/*-------------------------------------581PX HASTA 800PX*/
+/*--------------------------pagina conocenos*/
+@media (min-width: 581px) and (max-width: 800px) {
+  .LineaTiempo {
     width: 100%;
     height: auto;
-    .histograma1{
+    .histograma1 {
       display: none;
     }
-    .histograma2{
+    .histograma2 {
+      display: none;
+    }
+    .histograma3 {
       display: block;
       width: 100%;
       height: auto;
-      img{
+      img {
         width: 100%;
         height: 90%;
       }
+    }
+  }
+  .ConoDivision {
+    .DivisionImg {
+      height: 20rem;
+      width: 50%;
+    }
+    .DivisionText {
+      height: 20rem;
+      width: 50%;
+    }
+  }
+}
+
+/*----------------------------------501PX HASTA 580PX/*
+/*---------300PX HASTA 500PX*/
+/*---------------pagina conocenos*/
+@media (min-width: 300px) and (max-width: 500px) {
+  /*-----PAGINA CONOCENOS---*/
+  .LineaTiempo {
+    width: 100%;
+    height: auto;
+    .histograma1 {
+      display: none;
+    }
+    .histograma2 {
+      display: block;
+      width: 100%;
+      height: auto;
+      img {
+        width: 100%;
+        height: 90%;
+      }
+    }
+  }
+  .ConoDivision {
+    display: flex;
+    flex-direction: column;
+    .DivisionImg {
+      border-radius: 0% 100% 87% 13% / 90% 0% 100% 10%;
+      height: 18rem;
+      width: 100%;
+      justify-content: flex-start;
+      h3 {
+        text-align: left;
+        color: #fff;
+      }
+      p {
+        color: #fff;
+        text-align: left;
+      }
+    }
+  }
+  .DivisionText {
+    position: absolute;
+    border-radius: 85% 15% 0% 100% / 100% 15% 85% 0%;
+    position: initial;
+    height: 18rem;
+    width: 100%;
+    justify-content: flex-end;
+    h3 {
+      text-align: right;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+      text-align: right;
+    }
+  }
+}
+/*---PAGINA CONTACTANOS (FORMULARIO)*/
+@media (max-width: 991px) {
+  .Formulario {
+    padding: 30px;
+    form {
+      padding: 50px 30px;
+      width: 100%;
+      .input-group {
+        input {
+          padding: 15px 10px;
+        }
+      }
+    }
+  }
+}
+/*ENCABEZADOS*/
+@media (max-width: 911px) {
+  .encabezado {
+    padding: 30px;
+    .encabezado-box {
+      padding: 50px 30px;
+      width: 100%;
     }
   }
 }
