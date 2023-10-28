@@ -1,0 +1,204 @@
+            <div class="grid-contenido">
+                <div class="primer grid-item">
+                    <img src="./IMAGES/blanco1.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="segundo grid-item">
+                    <img src="./IMAGES/blanco2.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="tercero grid-item">
+                    <img src="./IMAGES/gris1.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="cuarto grid-item">
+                    <img src="./IMAGES/gris2.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="quinto grid-item">
+                    <img src="./IMAGES/naranja1.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="sexto grid-item">
+                    <img src="./IMAGES/naranja2.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="septimo grid-item">
+                    <img src="./IMAGES/negro1.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="octavo grid-item">
+                    <img src="./IMAGES/negro2.jpg" alt="oferta">
+                    <h3>COMPRAR</h3>
+                </div>
+                <div class="info">
+                    <h3>¿De que outfit te sientes hoy?</h3>    
+                    <p>Aqui en Whatheshoes, vas a poder elegir y crear tu propio estilo, tenemos un catalogo y opciones de personalizacion que haran de tu compra de zapatos una</p>
+                </div>
+                <div class="wave">
+                </div>
+            </div>
+            <div class="galery">
+                <div class=" primer-item">
+                    <img src="./IMAGES/negro1.jpg" alt="oferta">
+                </div>
+                <div class=" segundo-item">
+                    <img src="./IMAGES/negro2.jpg" alt="oferta">
+                </div>
+                <div class="tercer-item">
+                    <img src="./IMAGES/oferta2.jpg" alt="oferta">
+                </div>
+            </div>
+
+
+
+csssssssssssssss:
+.grid-contenido {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 500px;
+  justify-items: center;
+  position: relative;
+
+  div img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    box-shadow: 5px 2px 32px -7px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 5px 2px 32px -7px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 5px 2px 32px -7px rgba(0, 0, 0, 0.46);
+  }
+
+  .primer,
+  .segundo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    &:active {
+      z-index: -1;
+    }
+  }
+
+  .tercero,
+  .cuarto {
+    grid-column: -1/2;
+    grid-row: -1/2;
+    &:active {
+      z-index: -1;
+    }
+  }
+
+  .quinto,
+  .sexto {
+    grid-column: -3/-2;
+    grid-row: 2/3;
+
+    &:active {
+      z-index: -1;
+    }
+  }
+
+  .septimo,
+  .octavo {
+    grid-column: -2/-1;
+    grid-row: 3/2;
+    &:active {
+      z-index: -1;
+    }
+  }
+
+  .grid-item {
+    position: relative;
+  }
+
+  h3 {
+    position: absolute;
+    top: 418px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.213);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 66% 34% 71% 29% / 75% 28% 72% 25%;
+  box-shadow: 5px 2px 32px -7px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 5px 2px 32px -7px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 5px 2px 32px -7px rgba(0, 0, 0, 0.46);
+  width: 28%;
+  height: 45%;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.293), rgba(0, 0, 0, 0.315)) ,url(/IMAGES/tintaliguidabg2.jpg);
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  h3{
+    background-color: #00000000;
+    position: initial;
+    text-align: right;
+    width: 96%;
+  }
+  p{
+    color: white;
+    text-align: right;
+    width: 91%;
+  }
+}
+/* Ondas */
+.wave {
+  position: absolute;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100px;
+  background-image: url(../IMAGES/wave.png);
+  background-size: 1000px 100px;
+  animation: wave 10s linear infinite;
+  top: 1000px;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Galería */
+.galery {
+  width: 100%;
+  height: 620px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 10px;
+  background-color: #636fa1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .primer-item {
+    grid-column: span 2;
+  }
+
+  .segundo-item {
+    grid-row: span 2;
+  }
+
+  .tercer-item {
+    grid-column: span 2;
+  }
+
+  .cuarto-item {
+    grid-row: span 2;
+  }
+}

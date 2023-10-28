@@ -114,4 +114,12 @@
       width: 100%;
     }
   }
+}/*------------------MAIN-----*/
+/*TARJETAS*/
+@media (max-width: 767.98px){
+  .card{
+    .img-fit{
+      aspect-ratio: 1.45 / 1;
+    }
+  }
 }
